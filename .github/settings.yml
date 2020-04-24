@@ -45,7 +45,7 @@ repository:
 
 teams:
   - name: admins
-    permission: pull
+    permission: push
   - name: automation
     permission: push
   - name: contributors
