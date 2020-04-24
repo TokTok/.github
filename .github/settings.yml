@@ -44,6 +44,8 @@ repository:
   allow_rebase_merge: true
 
 teams:
+  - name: admins
+    permission: maintain
   - name: contributors
     permission: pull
   - name: reviewers
