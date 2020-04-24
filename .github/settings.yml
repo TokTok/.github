@@ -131,7 +131,7 @@ labels:
     color: "#ee0701"
     description: "Behaviour implemented is not as specified"
 
-  - name: "code-cleanup"
+  - name: "code cleanup"
     color: "#fef2c0"
     description: "Internal code cleanup, not affecting semantics"
 
