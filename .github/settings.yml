@@ -115,61 +115,81 @@ branches:
 
 # GitHub Issue/PR labels.
 labels:
-  - name: "CAT:api-break"
+  - name: "api break"
     color: "#d96f0b"
     description: "Change breaks API or ABI"
 
-  - name: "CAT:bug"
+  - name: "bug"
     color: "#ee0701"
     description: "Behaviour implemented is not as specified"
 
-  - name: "CAT:code-cleanup"
+  - name: "code-cleanup"
     color: "#fef2c0"
     description: "Internal code cleanup, not affecting semantics"
 
-  - name: "CAT:coverage"
+  - name: "coverage"
     color: "#0e8a16"
     description: "Code coverage related"
 
-  - name: "CAT:documentation"
+  - name: "dependencies"
+    color: "#0366d6"
+    description: "Pull requests that update a dependency file"
+
+  - name: "documentation"
     color: "#1d76db"
     description: "Documentation"
 
-  - name: "CAT:enhancement"
+  - name: "enhancement"
     color: "#84b6eb"
-    description: "Feature requests and implementation"
+    description: "New feature or request"
 
-  - name: "CAT:meta"
+  - name: "meta"
     color: "#256784"
     description: "Process related"
 
-  - name: "CAT:overhead"
+  - name: "overhead"
     color: "#f9d0c4"
     description: "Chores"
 
-  - name: "CAT:packaging"
+  - name: "packaging"
     color: "#1d76db"
     description: "Packaging"
 
-  - name: "CAT:proposal"
+  - name: "proposal"
     color: "#8effa5"
     description: "Proposals"
 
-  - name: "CAT:question"
+  - name: "question"
     color: "#cc317c"
     description: "Questions"
 
-  - name: "CAT:security"
+  - name: "security"
     color: "#d93f0b"
     description: "Security"
 
-  - name: "CAT:suggestion"
+  - name: "suggestion"
     color: "#d93f0b"
     description: "Suggestions"
 
   - name: "good first issue"
     color: "#7057ff"
     description: "Good first issue"
+
+  - name: "duplicate"
+    color: "#cccccc"
+    description: "This issue or pull request already exists"
+
+  - name: "help wanted"
+    color: "#128a0c"
+    description: "Extra attention is needed"
+
+  - name: "not reproducible"
+    color: "#e6e6e6"
+    description: "Won't Fix (Not reproducible)"
+
+  - name: "wontfix"
+    color: "#ffffff"
+    description: "Won't Fix (Intended behaviour)"
 
   - name: "P0"
     color: "#d93f0b"
@@ -186,19 +206,3 @@ labels:
   - name: "P3"
     color: "#eeeeee"
     description: "Low priority"
-
-  - name: "STA:duplicate"
-    color: "#cccccc"
-    description: "Duplicate"
-
-  - name: "STA:help-wanted"
-    color: "#128a0c"
-    description: "Help wanted"
-
-  - name: "STA:no-repro"
-    color: "#e6e6e6"
-    description: "Won't Fix (Not reproducible)"
-
-  - name: "STA:working-as-intended"
-    color: "#ffffff"
-    description: "Won't Fix (Intended behaviour)"
