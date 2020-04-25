@@ -1,10 +1,10 @@
 ---
 repository:
   # The name of the repository. Changing this will rename the repository
-  name: template
+  name: .github
 
   # A short description of the repository that will show up on GitHub
-  description: Template repository for setting up a new project within TokTok
+  description: Global settings for all TokTok repos.
 
   # A URL with more information about the repository
   homepage: https://toktok.ltd/
