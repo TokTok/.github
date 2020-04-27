@@ -1,2 +1,3 @@
-# template
-Template repository with all the files needed to set up a new project within TokTok
+# .github
+
+GitHub global configs for all repos in the TokTok organisation.
