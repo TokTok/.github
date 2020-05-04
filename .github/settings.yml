@@ -84,10 +84,14 @@ branches:
         # into this branch
         contexts:
           # Common across all repos.
+          - DeepCode
+          - Hound
           - Mergeable
           - Milestone Check
+          - TitleLint
           - WIP
           - license/cla
+          - restyled
 
       # Required. Enforce all configured restrictions for administrators. Set
       # to true to enforce required status checks for repository

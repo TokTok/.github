@@ -1,0 +1,33 @@
+---
+replacers:
+  - search: "/(feat|fix|docs|chore|style|refactor|perf|test): /"
+    replace: ""
+
+name-template: "v$NEXT_PATCH_VERSION 🌈"
+tag-template: "v$NEXT_PATCH_VERSION"
+change-template: "- $TITLE @$AUTHOR (#$NUMBER)"
+
+categories:
+  - title: "❗ API Breaks"
+    labels:
+      - api break
+  - title: "🚀 Features"
+    labels:
+      - enhancement
+  - title: "🐛 Bug Fixes"
+    labels:
+      - bug
+  - title: "📚 Documentation"
+    labels:
+      - documentation
+  - title: "🧰 Maintenance"
+    labels:
+      - chore
+      - dependencies
+      - refactor
+      - test
+
+template: |
+  ## Release Notes
+
+  $CHANGES
