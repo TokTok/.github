@@ -136,9 +136,13 @@ labels:
     color: "#ee0701"
     description: "Behaviour implemented is not as specified"
 
-  - name: "code cleanup"
+  - name: "chore"
+    color: "#f9d0c4"
+    description: "Chores/overhead"
+
+  - name: "cleanup"
     color: "#fef2c0"
-    description: "Internal code cleanup, not affecting semantics"
+    description: "Internal code cleanup, possibly affecting semantics, e.g. deleting a deprecated feature."
 
   - name: "coverage"
     color: "#0e8a16"
@@ -160,10 +164,6 @@ labels:
     color: "#256784"
     description: "Process related"
 
-  - name: "overhead"
-    color: "#f9d0c4"
-    description: "Chores"
-
   - name: "packaging"
     color: "#1d76db"
     description: "Packaging"
@@ -171,6 +171,10 @@ labels:
   - name: "proposal"
     color: "#8effa5"
     description: "Proposals"
+
+  - name: "refactor"
+    color: "#fef2c0"
+    description: "Internal code cleanup, not affecting semantics"
 
   - name: "question"
     color: "#cc317c"
