@@ -1,0 +1,53 @@
+---
+version: 2
+mergeable:
+  - when: pull_request.*, pull_request_review.*
+    validate:
+      # Enforce semantic release convention.
+      - do: title
+        must_include:
+          regex: ^(feat|docs|chore|fix|refactor|test|style|perf)(\(\w+\))?:.+$
+          message: Semantic release conventions must be followed.
+      # All todo check boxes must be checked.
+      - do: description
+        must_exclude:
+          regex: \[ \]
+          message: There are incomplete TODO task(s) unchecked.
+    pass:
+      - do: checks
+        status: "success"
+        payload:
+          title: "{{passCount}} checks passed!"
+          summary: "### Status: {{toUpperCase validationStatus}}"
+          text: "{{#each validationSuites}}\n
+                #### {{{statusIcon status}}} Validator: {{toUpperCase name}}\n
+                {{#each validations }} * {{{statusIcon status}}} ***{{{ description }}}***\n
+                       Input : {{{details.input}}}\n
+                       Settings : {{{displaySettings details.settings}}}\n
+                       {{/each}}\n
+                {{/each}}"
+    fail:
+      - do: checks
+        status: "failure"
+        payload:
+          title: |
+            {{#each validationSuites}}
+            {{#each validations}}
+            {{#ifEquals status "fail"}}
+            {{{description}}}
+            {{/ifEquals}}
+            {{/each}}
+            {{/each}}
+          summary: |
+               ### Status: {{toUpperCase validationStatus}}
+                    Here are some stats of the run:
+                    {{validationCount}} validations were ran.
+                    {{passCount}} PASSED
+                    {{failCount}} FAILED
+          text: "{{#each validationSuites}}\n
+                #### {{{statusIcon status}}} Validator: {{toUpperCase name}}\n
+                {{#each validations }} * {{{statusIcon status}}} ***{{{ description }}}***\n
+                       Input : {{{details.input}}}\n
+                       Settings : {{{displaySettings details.settings}}}\n
+                       {{/each}}\n
+                {{/each}}"
