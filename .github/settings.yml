@@ -131,25 +131,27 @@ branches:
 
 # GitHub Issue/PR labels.
 labels:
+  #############################################################################
+  #
+  # :: PR labels relevant to the release notes.
+  #
+  #############################################################################
+
   - name: "api break"
     color: "#d96f0b"
     description: "Change breaks API or ABI"
 
   - name: "bug"
     color: "#ee0701"
-    description: "Behaviour implemented is not as specified"
+    description: "Bug fix for the user, not a fix to a build script"
 
   - name: "chore"
     color: "#f9d0c4"
-    description: "Chores/overhead"
+    description: "Updating grunt tasks etc; no production code change"
 
   - name: "cleanup"
     color: "#fef2c0"
     description: "Internal code cleanup, possibly affecting semantics, e.g. deleting a deprecated feature."
-
-  - name: "coverage"
-    color: "#0e8a16"
-    description: "Code coverage related"
 
   - name: "dependencies"
     color: "#0366d6"
@@ -157,11 +159,33 @@ labels:
 
   - name: "documentation"
     color: "#1d76db"
-    description: "Documentation"
+    description: "Changes to the documentation"
 
   - name: "enhancement"
     color: "#84b6eb"
-    description: "New feature or request"
+    description: "New feature for the user, not a new feature for build script"
+
+  - name: "style"
+    color: "#fef2c0"
+    description: "Formatting, missing semi colons, etc; no production code change"
+
+  - name: "performance"
+    color: "#fef2c0"
+    description: "A code change that improves performance"
+
+  - name: "refactor"
+    color: "#fef2c0"
+    description: "Refactoring production code, eg. renaming a variable, not affecting semantics"
+
+  - name: "test"
+    color: "#0e8a16"
+    description: "Adding missing tests, refactoring tests; no production code change"
+
+  #############################################################################
+  #
+  # :: Bug labels
+  #
+  #############################################################################
 
   - name: "meta"
     color: "#256784"
@@ -174,10 +198,6 @@ labels:
   - name: "proposal"
     color: "#8effa5"
     description: "Proposals"
-
-  - name: "refactor"
-    color: "#fef2c0"
-    description: "Internal code cleanup, not affecting semantics"
 
   - name: "question"
     color: "#cc317c"
@@ -210,6 +230,12 @@ labels:
   - name: "wontfix"
     color: "#ffffff"
     description: "Won't Fix (Intended behaviour)"
+
+  #############################################################################
+  #
+  # :: Priority labels
+  #
+  #############################################################################
 
   - name: "P0"
     color: "#d93f0b"
