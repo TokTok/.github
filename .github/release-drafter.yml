@@ -1,6 +1,6 @@
 ---
 replacers:
-  - search: "/(feat|fix|docs|chore|style|refactor|perf|test): /"
+  - search: "/(feat|fix|docs|chore|cleanup|style|refactor|perf|test)(\(\w+\))?: /g"
     replace: ""
 
 name-template: "v$NEXT_PATCH_VERSION 🌈"
@@ -23,6 +23,7 @@ categories:
   - title: "🧰 Maintenance"
     labels:
       - chore
+      - cleanup
       - dependencies
       - refactor
       - test
