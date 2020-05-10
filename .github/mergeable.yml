@@ -7,7 +7,7 @@ mergeable:
       - do: title
         or:
           - must_include:
-              regex: ^(feat|docs|chore|cleanup|fix|refactor|test|style|perf)(\(\w+\))?:.+$
+              regex: ^(feat|docs|chore|cleanup|fix|refactor|test|style|perf)(\(\w+\))?: .+$
               message: Semantic release conventions must be followed.
           - must_include:
               regex: ^Bump [^ ]* from [^ ]* to [^ ]*$
