@@ -231,6 +231,10 @@ labels:
     color: "#ffffff"
     description: "Won't Fix (Intended behaviour)"
 
+  - name: "invalid"
+    color: "#d73a49"
+    description: "Irrelevant or spam"
+
   #############################################################################
   #
   # :: Priority labels
