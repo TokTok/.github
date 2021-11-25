@@ -84,8 +84,6 @@ branches:
         # into this branch
         contexts:
           # Common across all repos.
-          - DeepCode
-          - Hound
           - Mergeable
           - Milestone Check
           - WIP
