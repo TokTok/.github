@@ -3,42 +3,42 @@ replacers:
   - search: "/- (feat|fix|docs|chore|cleanup|style|refactor|perf|test)(\\(\\w+\\))?: /g"
     replace: "- "
 
-name-template: "v$NEXT_PATCH_VERSION 🌈"
+name-template: "v$NEXT_PATCH_VERSION"
 tag-template: "v$NEXT_PATCH_VERSION"
 change-template: "- $TITLE @$AUTHOR (#$NUMBER)"
 
 categories:
-  - title: "❗ Breaking changes"
+  - title: "Breaking changes"
     labels:
       - api break
-  - title: "🚀 Features"
+  - title: "Features"
     labels:
       - enhancement
-  - title: "🚀 Performance improvements"
+  - title: "Performance improvements"
     labels:
       - performance
-  - title: "🐛 Bug Fixes"
+  - title: "Bug Fixes"
     labels:
       - bug
-  - title: "📚 Documentation"
+  - title: "Documentation"
     labels:
       - documentation
-  - title: "🧰 Maintenance (Grunt tasks)"
+  - title: "Maintenance (Grunt tasks)"
     labels:
       - chore
-  - title: "🧰 Maintenance (Code cleanup)"
+  - title: "Maintenance (Code cleanup)"
     labels:
       - cleanup
-  - title: "🧰 Maintenance (Dependencies)"
+  - title: "Maintenance (Dependencies)"
     labels:
       - dependencies
-  - title: "🧰 Maintenance (Refactoring)"
+  - title: "Maintenance (Refactoring)"
     labels:
       - refactor
-  - title: "🧰 Maintenance (Tests)"
+  - title: "Maintenance (Tests)"
     labels:
       - test
-  - title: "🧰 Maintenance (Code style)"
+  - title: "Maintenance (Code style)"
     labels:
       - style
 
