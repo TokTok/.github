@@ -87,7 +87,6 @@ branches:
           - Mergeable
           - Milestone Check
           - WIP
-          - license/cla
           - restyled
 
       # Required. Enforce all configured restrictions for administrators. Set
