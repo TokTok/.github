@@ -74,9 +74,6 @@ branches:
         # dismissal_restrictions are only available for organization-owned
         # repositories. Omit this parameter for personal repositories.
         dismissal_restrictions: {}
-        # Requires all conversations on code to be resolved before a pull
-        # request can be merged into a branch that matches this rule. 
-        required_conversation_resolution: true
 
       # Required. Require status checks to pass before merging. Set to null to
       # disable
@@ -128,6 +125,11 @@ branches:
       # the repository. Set to false to prevent deletion of the protected
       # branch. Default: false.
       allow_deletions: false
+
+      # Requires all conversations on code to be resolved before a pull request
+      # can be merged into a branch that matches this rule. Set to false to
+      # disable. Default: false.
+      required_conversation_resolution: true
 
 # GitHub Issue/PR labels.
 labels:
