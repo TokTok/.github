@@ -74,6 +74,9 @@ branches:
         # dismissal_restrictions are only available for organization-owned
         # repositories. Omit this parameter for personal repositories.
         dismissal_restrictions: {}
+        # Requires all conversations on code to be resolved before a pull
+        # request can be merged into a branch that matches this rule. 
+        required_conversation_resolution: true
 
       # Required. Require status checks to pass before merging. Set to null to
       # disable
