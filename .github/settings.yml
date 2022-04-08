@@ -258,3 +258,29 @@ labels:
   - name: "P3"
     color: "#eeeeee"
     description: "Low priority"
+
+  #############################################################################
+  #
+  # :: Difficulty/size labels
+  #
+  #############################################################################
+
+  - name: "XS"
+    color: "#ffffff"
+    description: "Extra small task: a few minutes of work"
+
+  - name: "S"
+    color: "#eeeeee"
+    description: "Small task: about a day of work"
+
+  - name: "M"
+    color: "#ffcccc"
+    description: "Medium task: a few days, maybe a week"
+
+  - name: "L"
+    color: "#eb6420"
+    description: "Large task: several weeks"
+
+  - name: "XL"
+    color: "#d93f0b"
+    description: "Extra large task: several months"
