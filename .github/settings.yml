@@ -86,7 +86,6 @@ branches:
           # Common across all repos.
           - Mergeable
           - Milestone Check
-          - WIP
           - restyled
 
       # Required. Enforce all configured restrictions for administrators. Set
