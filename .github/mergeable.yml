@@ -12,6 +12,14 @@ mergeable:
           - must_include:
               regex: ^Bump [^ ]* from [^ ]* to [^ ]*$
               message: Dependabot PRs are exempt from semantic release conventions.
+      - do: commit
+        or:
+          - must_include:
+              regex: ^(feat|docs|chore|cleanup|fix|refactor|test|style|perf)(\(\w+\))?:\ .+$
+              message: Semantic release conventions must be followed.
+          - must_include:
+              regex: ^Bump [^ ]* from [^ ]* to [^ ]*$
+              message: Dependabot PRs are exempt from semantic release conventions.
       # All todo check boxes must be checked.
       - do: description
         must_exclude:
