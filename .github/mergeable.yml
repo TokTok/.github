@@ -14,7 +14,7 @@ mergeable:
               message: Dependabot PRs are exempt from semantic release conventions.
       - do: commit
         message:
-          regex: ^((feat|docs|chore|cleanup|fix|refactor|test|style|perf)(\(\w+\))?:\ .+|Bump [^ ]* from [^ ]* to [^ ]*)$
+          regex: ^((feat|docs|chore|cleanup|fix|refactor|test|style|perf)(\(\w+\))?:\ .+|Bump [^ ]* from [^ ]* to [^ ]*)
           message: Semantic release conventions must be followed.
       # All todo check boxes must be checked.
       - do: description
