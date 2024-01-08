@@ -13,13 +13,9 @@ mergeable:
               regex: ^Bump [^ ]* from [^ ]* to [^ ]*$
               message: Dependabot PRs are exempt from semantic release conventions.
       - do: commit
-        or:
-          - message:
-              regex: ^(feat|docs|chore|cleanup|fix|refactor|test|style|perf)(\(\w+\))?:\ .+$
-              message: Semantic release conventions must be followed.
-          - message:
-              regex: ^Bump [^ ]* from [^ ]* to [^ ]*$
-              message: Dependabot PRs are exempt from semantic release conventions.
+        message:
+          regex: ^((feat|docs|chore|cleanup|fix|refactor|test|style|perf)(\(\w+\))?:\ .+|Bump [^ ]* from [^ ]* to [^ ]*)$
+          message: Semantic release conventions must be followed.
       # All todo check boxes must be checked.
       - do: description
         must_exclude:
