@@ -7,6 +7,26 @@ name-template: "v$NEXT_PATCH_VERSION"
 tag-template: "v$NEXT_PATCH_VERSION"
 change-template: "- $TITLE @$AUTHOR (#$NUMBER)"
 
+autolabeler:
+  - label: enhancement
+    title: '/^feat:/'
+  - label: bug
+    title: '/^fix:/'
+  - label: documentation
+    title: '/^docs:/'
+  - label: chore
+    title: '/^chore:/'
+  - label: cleanup
+    title: '/^cleanup:/'
+  - label: style
+    title: '/^style:/'
+  - label: refactor
+    title: '/^refactor:/'
+  - label: performance
+    title: '/^perf:/'
+  - label: test
+    title: '/^test:/'
+
 categories:
   - title: "Breaking changes"
     labels:
