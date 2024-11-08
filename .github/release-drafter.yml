@@ -1,6 +1,6 @@
 ---
 replacers:
-  - search: "/- (feat|fix|docs|chore|cleanup|style|refactor|perf|test)(\\(\\w+\\))?: /g"
+  - search: "/- (feat|fix|docs|chore|cleanup|style|refactor|perf|test)(\\([^) ]+\\))?: /g"
     replace: "- "
 
 name-template: "v$NEXT_PATCH_VERSION"
@@ -9,23 +9,23 @@ change-template: "- $TITLE @$AUTHOR (#$NUMBER)"
 
 autolabeler:
   - label: enhancement
-    title: '/^feat:/'
+    title: '/^feat[:(]/'
   - label: bug
-    title: '/^fix:/'
+    title: '/^fix[:(]/'
   - label: documentation
-    title: '/^docs:/'
+    title: '/^docs[:(]/'
   - label: chore
-    title: '/^chore:/'
+    title: '/^chore[:(]/'
   - label: cleanup
-    title: '/^cleanup:/'
+    title: '/^cleanup[:(]/'
   - label: style
-    title: '/^style:/'
+    title: '/^style[:(]/'
   - label: refactor
-    title: '/^refactor:/'
+    title: '/^refactor[:(]/'
   - label: performance
-    title: '/^perf:/'
+    title: '/^perf[:(]/'
   - label: test
-    title: '/^test:/'
+    title: '/^test[:(]/'
 
 categories:
   - title: "Breaking changes"
